@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage{ucs}
+\usepackage{eurosym}
+\usepackage[utf8x]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[margin=3cm]{geometry}
+\newcommand{\qt}[1]{\glq\emph{#1}\grq}
+\newcommand{\qs}[1]{\glqq#1\grqq}
+\newcommand{\name}{dezentrale}
+\newcommand{\revision}{$Revision: 1$}
+\newcommand{\revdate}{$2017-06-25$}
+\setlength{\parskip}{6pt}
+\setlength{\parindent}{0pt}
+\usepackage{enumerate}
+\usepackage{color}
+\pagestyle{plain}
+\usepackage{palatino}
+\usepackage[bookmarks,bookmarksopen=true,bookmarksnumbered=true,colorlinks,linkcolor=black,urlcolor=blue]{hyperref}
+\usepackage{ulem}
+\usepackage{eurosym}
+\begin{document}
+\begin{Form}
+\begin{table}[h!]
+  \label{tab:table1}
+  \begin{tabular}{p{10cm}p{5cm}}
+    {\LARGE Ich bin dabei!} &
+		\begin{tabular}{@{}c@{}}
+			logo\\
+			\name\ e.V.\\
+			foostr. 23\\
+			99999 Leipzig\\
+			www.dezentrale.space
+		\end{tabular}
+		\\
+		\hline
+	\end{tabular}
+\end{table}
+
+\ChoiceMenu[radio,name=AntragModus]{}{ }\ Ich m{\"o}chte die Arbeit des dezentrale e.V. unterst{\"u}tzen und Vereinsmitglied werden.\\
+\ChoiceMenu[radio,name=AntragModus]{}{ }\ Ich m{\"o}chte meine bestehenden Mitgliedsdaten {\"a}ndern (\TextField[name=Mitgliedsnummer,width=2cm]{Mitgliedsnummer: }\ )\\
+\\\\
+Meine Daten:
+\begin{table}[h!]
+    \label{tab:table2}
+    \begin{tabular}{p{2cm}p{3cm}p{3cm}p{4cm}p{0.1cm}}
+		Vorname:    & \TextField[name=Vorname,width=3cm]{}    & Stra{\ss}e, Hausnr.:   & \TextField[name=Strasse,width=2.5cm]{}\ \TextField[name=Hausnummer,width=1cm]{} & \\[0.2cm]
+        Name:       & \TextField[name=Name,width=3cm]{}       & PLZ, Ort:              & \TextField[name=Postleitzahl,width=1cm]{}\ \TextField[name=Wohnort,width=2.5cm]{} & \\[0.2cm]
+		Geburtstag: & \TextField[name=Geburtstag,width=3cm]{} & L{\"a}nderk{\"u}rzel:  & \TextField[name=Laenderkuerzel,width=1cm]{} & \\[0.2cm]
+		Pseudonym   & \TextField[name=Pseudonym, width=3cm]{} & E-Mail-Adresse:        & \TextField[name=EMail,width=3.5cm]{} & \\[0.2cm]
+        (f{\"u}r Mailingliste) \\[0.2cm]
+	\end{tabular}
+\end{table}
+
+
+PGP-Fingerprint: \TextField[name=Fingerprint,width=10cm]{} \\
+\\
+Angabe eines PGP-Keys ist optional, aber f{\"u}r die elektronische Stimmabgabe und Einreichung von Dokumenten notwendig.\\
+\CheckBox{ } Ich m{\"o}chte Einladungen zu Mitgliederversammlungen auf dem Postweg erhalten und entrichte 
+daf{\"u}r eine Geb{\"u}hr von 1,00 \euro pro Einladung.\\
+\\
+Art der Mitgliedschaft\\
+\ChoiceMenu[radio,name=MitgliedModus]{}{ }\ regul{\"a}res Mitglied\ \ 
+\ChoiceMenu[radio,name=MitgliedModus]{}{ }\ F{\"o}rdermitglied\\\\
+Beitragsh{\"o}he:\\
+	\ChoiceMenu[radio,name=MitgliedBeitrag]{}{ }\ 16,00 \euro / Monat f{\"u}r erm{\"a}{\ss}igte Mitgliedschaft\\
+	\ChoiceMenu[radio,name=MitgliedBeitrag]{}{ }\ 32,00 \euro / Monat f{\"u}r normale Mitgliedschaft\\
+	\ChoiceMenu[radio,name=MitgliedBeitrag]{}{ }\ 42,00 \euro
+	\ChoiceMenu[radio,name=MitgliedBeitrag]{}{ }\ 64,00 \euro
+	\ChoiceMenu[radio,name=MitgliedBeitrag]{}{ }\ 128,00 \euro
+	\ChoiceMenu[radio,name=MitgliedBeitrag]{}{ }\ 256,00 \euro / Monat f{\"u}r Nerdmitglieder\\
+\\
+Zahlungsweise per {\"U}berweisung:\\
+	\ChoiceMenu[radio,name=ZahlungModus]{}{ }\ monatlich im voraus
+	\ChoiceMenu[radio,name=ZahlungModus]{}{ }\ quartalsweise im voraus\\\\
+Kontodaten des Vereins: dezentrale e.V., IBAN DE************************* FooBank\\\\
+Ich habe die Satzung und die Gesch{\"a}ftsordnung gelesen und akzeptiert.\\\\\\
+\begin{table}[h!]
+  \label{tab:table1}
+  \begin{tabular}{p{6cm}p{9cm}}
+	\\
+	\hline\\
+    Ort, Datum &
+		\begin{tabular}{@{}c@{}}
+			Unterschrift\\
+			(bei Minderj{\"a}hrigen eines/r Erziehungsberechtigten)
+		\end{tabular}
+	\end{tabular}
+\end{table}
+\end{Form}
+\end{document}
