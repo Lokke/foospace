@@ -7,8 +7,8 @@
 \newcommand{\qt}[1]{\glq\emph{#1}\grq}
 \newcommand{\qs}[1]{\glqq#1\grqq}
 \newcommand{\name}{dezentrale}
-\newcommand{\revision}{$1$}
-\newcommand{\revdate}{$2017-06-28$}
+\newcommand{\revision}{$2$}
+\newcommand{\revdate}{$2017-07-02$}
 \setlength{\parskip}{6pt}
 \setlength{\parindent}{0pt}
 \usepackage{enumerate}
@@ -20,43 +20,62 @@
 \usepackage{eurosym}
 \begin{document}
 \begin{Form}
-\begin{table}[h!]
-  \label{tab:table1}
-  \begin{tabular}{p{7.5cm}p{3.5cm}p{3cm}}
-    {\LARGE Ich bin dabei!} &
-		\begin{tabular}{@{}c@{}}
-			\name\ e.V.\\
-			Tapetenwerk Haus K\\
-			L{\"u}tzner Str. 91\\
-			04177 Leipzig\\
-			www.dezentrale.space
-		\end{tabular}
-		&
-		logo\\
-		\hline
+
+{\setlength\tabcolsep{0 pt}
+\begin{tabular}{p{8.5cm}p{3.5cm}p{3cm}}
+   {\LARGE Ich bin dabei!} &
+	\begin{tabular}{@{}c@{}}
+		\name\ e.V.\\
+		Tapetenwerk Haus K\\
+		L{\"u}tzner Str. 91\\
+		04177 Leipzig\\
+		www.dezentrale.space
 	\end{tabular}
-\end{table}
+	&
+	logo\\
+	\hline
+\end{tabular}
+}
 
 \ChoiceMenu[bordercolor=0 0 0,radio,name=AntragModus]{}{ }\ Ich m{\"o}chte die Arbeit des dezentrale e.V. unterst{\"u}tzen und Vereinsmitglied werden.\\[0.2cm]
 \ChoiceMenu[bordercolor=0 0 0,radio,name=AntragModus]{}{ }\ Ich m{\"o}chte meine bestehenden Mitgliedsdaten {\"a}ndern (Mitgliedsnummer: \underline{\TextField[bordercolor=,name=Mitgliedsnummer,width=2cm]{}}\ )\\\\
 {\bf Meine Daten:}\\[0.3cm]
-    \begin{tabular}{p{2cm}p{4cm}p{2.6cm}p{5.1cm}p{0.1cm}}
-		Vorname:    & \underline{\TextField[bordercolor=,name=Vorname,width=4cm]{}}    & Stra{\ss}e, Hausnr.:   & \underline{\TextField[bordercolor=,name=Strasse,width=3.8cm]{}} \underline{\TextField[bordercolor=,name=Hausnummer,width=1cm]{}} & \\[0.2cm]
-        Name:       & \underline{\TextField[bordercolor=,name=Name,width=4cm]{}}       & PLZ, Ort:              & \underline{\TextField[bordercolor=,name=Postleitzahl,width=1.2cm]{}} \underline{\TextField[bordercolor=,name=Wohnort,width=3.6cm]{}} & \\[0.2cm]
+{\setlength\tabcolsep{0 pt}
+    \begin{tabular}{p{2.2cm}p{4.2cm}p{2.7cm}p{5.9cm}p{0.1cm}}
+		Vorname:    & \underline{\TextField[bordercolor=,name=Vorname,width=4cm]{}}    & Stra{\ss}e, Hausnr.:   & \underline{\TextField[bordercolor=,name=Strasse,width=4.6cm]{}} \underline{\TextField[bordercolor=,name=Hausnummer,width=1cm]{}} & \\[0.2cm]
+        Name:       & \underline{\TextField[bordercolor=,name=Name,width=4cm]{}}       & PLZ, Ort:              & \underline{\TextField[bordercolor=,name=Postleitzahl,width=1.2cm]{}} \underline{\TextField[bordercolor=,name=Wohnort,width=4.4cm]{}} & \\[0.2cm]
 		Geburtstag: & \underline{\TextField[bordercolor=,name=Geburtstag,width=4cm]{}} & L{\"a}nderk{\"u}rzel:  & \underline{\TextField[bordercolor=,name=Laenderkuerzel,width=1.2cm]{}} & \\[0.2cm]
-		Pseudonym:  & \underline{\TextField[bordercolor=,name=Pseudonym, width=4cm]{}} & E-Mail-Adresse:        & \underline{\TextField[bordercolor=,name=EMail,width=5cm]{}} & \\[0.2cm]
+		Pseudonym:  & \underline{\TextField[bordercolor=,name=Pseudonym, width=4cm]{}} & E-Mail-Adresse:        & \underline{\TextField[bordercolor=,name=EMail,width=5.8cm]{}} & \\
         \ 			& (optional) & \ 					 & \ 								  & \\[0.3cm]
 	\end{tabular}
-\\PGP-Fingerprint: \underline{\TextField[bordercolor=,name=Fingerprint,width=12.25cm]{}}\\[0.2cm]
-Angabe eines PGP-Keys ist optional, aber f{\"u}r die elektronische Stimmabgabe und Einreichung von Dokumenten notwendig.\\\\
-\CheckBox[bordercolor=0 0 0]{ }	Ich m{\"o}chte Einladungen zu Mitgliederversammlungen auf dem Postweg erhalten
-								und entrichte daf{\"u}r eine Geb{\"u}hr von 1,00 \euro\ pro Einladung.\\
+}
 
-{\bf Art der Mitgliedschaft:}
-\ChoiceMenu[bordercolor=0 0 0,radio,name=MitgliedModus]{}{ }\ regul{\"a}res Mitglied\ \ 
-\ChoiceMenu[bordercolor=0 0 0,radio,name=MitgliedModus]{}{ }\ F{\"o}rdermitglied\\\\
-Gew{\"u}nschtes Beitrittsdatum (Monat, Jahr): \underline{\TextField[bordercolor=,name=Beitrittsdatum, width=2.5cm]{}}\\\\
-Beitragsh{\"o}he:\\
+{\setlength\tabcolsep{0 pt}
+\begin{tabular}{p{2.9cm}p{12cm}}
+PGP-Fingerprint: & \underline{\TextField[bordercolor=,name=Fingerprint,width=12cm]{}}\\
+\ & Angabe eines PGP-Keys ist optional, aber f{\"u}r die elektronische Stimmabgabe und Einreichung von Dokumenten ist eine Signatur notwendig.\\
+\end{tabular}
+}\\
+
+{\setlength\tabcolsep{0 pt}
+\begin{tabular}{p{0.6cm}p{14cm}}
+\CheckBox[name=EinladungPost,bordercolor=0 0 0]{} &
+	Ich m{\"o}chte Einladungen zu Mitgliederversammlungen auf dem Postweg erhalten
+	und entrichte daf{\"u}r eine Geb{\"u}hr von 1,00 \euro\ pro Einladung.\\
+\end{tabular}
+}\\
+
+{\setlength\tabcolsep{0 pt}
+\begin{tabular}{p{4cm}p{11cm}p{0.1cm}}
+
+{\bf Art der Mitgliedschaft:} & \ChoiceMenu[bordercolor=0 0 0,radio,name=MitgliedModus]{}{ }\ regul{\"a}res Mitglied\ \ 
+								\ChoiceMenu[bordercolor=0 0 0,radio,name=MitgliedModus]{}{ }\ F{\"o}rdermitglied & \\[0.1cm]
+\ 							&	F{\"o}rdermitglieder stimmen in Mitgliederversammlungen nicht mit ab. Ein Wechsel zwischen
+								beiden Arten ist am Anfang jeder MV m{\"o}glich. & \\
+\end{tabular}
+}\\[0.3cm]
+Gew{\"u}nschtes Beitrittsdatum (Monat, Jahr): \underline{\TextField[bordercolor=,name=Beitrittsdatum, width=3cm]{}}\\[0.3cm]
+{\bf Beitragsh{\"o}he:}\\
 	\ChoiceMenu[bordercolor=0 0 0,radio,name=MitgliedBeitrag]{}{ }\ 16,00 \euro / Monat f{\"u}r erm{\"a}{\ss}igte Mitgliedschaft\\
 	\ChoiceMenu[bordercolor=0 0 0,radio,name=MitgliedBeitrag]{}{ }\ 32,00 \euro / Monat f{\"u}r normale Mitgliedschaft\\
 	\ChoiceMenu[bordercolor=0 0 0,radio,name=MitgliedBeitrag]{}{ }\ 42,00 \euro
@@ -66,19 +85,17 @@ Beitragsh{\"o}he:\\
 \\
 Der Mitgliedsbeitrag ist zu Beginn des jeweiligen Monats fällig.\\\\
 {\bf Kontodaten des Vereins:}\\
-dezentrale e.V., IBAN: DE48 8605 5592 1090 1699 29,\\
-Sparkasse Leipzig (BIC: WELADE8L)\\
+dezentrale, IBAN: DE48 8605 5592 1090 1699 29, Sparkasse Leipzig (BIC: WELADE8L)\\
 Als Verwendungszweck f{\"u}r {\"U}berweisungen vergibt der Schatzmeister eine Mitgliedsnummer.\\\\
 {\bf Ich habe die Satzung und die Gesch{\"a}ftsordnung gelesen und akzeptiert.}\\\\
 \\
-\begin{tabular}{p{6cm}p{9cm}}
-	\underline{\TextField[bordercolor=,name=OrtDatum, width=6cm]{}}
-	&
-	\underline{\TextField[bordercolor=,name=Unterschrift, width=9cm]{}}\ \\
+\begin{tabular}{p{7cm}p{6.5cm}}
+	\underline{\TextField[bordercolor=,name=OrtDatum, width=7cm]{}}&\underline{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\ \\
+	% \TextField[bordercolor=,name=Unterschrift, width=5.5cm]{}
     Ort, Datum & Unterschrift\\
 	\ & (bei Minderj{\"a}hrigen eines/r Erziehungsberechtigten)\\
 \end{tabular}
-\\\\\\\\\\
-Mitgliedsantrag \name\ e.V., Revision \revision, Erstellungsdatum: \revdate
+\\\\\\\\
+Mitgliedsantrag \name, Revision \revision, Erstellungsdatum: \revdate
 \end{Form}
 \end{document}
