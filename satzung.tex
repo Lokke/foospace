@@ -1,25 +1,29 @@
 \documentclass[10pt,a4paper]{scrartcl}
 \usepackage{eurosym}
-\usepackage[utf8x]{inputenc}
-\usepackage{ngerman}
-\usepackage[ngerman]{babel}
 \usepackage[margin=3cm]{geometry}
+\usepackage[utf8]{inputenc}
 \newcommand{\qt}[1]{\glq\emph{#1}\grq}
-\newcommand{\qs}[1]{\glqq#1\grqq}
+\newcommand{\qs}[1]{"#1"}
 \newcommand{\name}{dezentrale}
-\newcommand{\revision}{$3$}
-\newcommand{\revdate}{$2017-07-02$}
+\newcommand{\revision}{$4$}
+\newcommand{\revdate}{$2018-04-20$}
 \setlength{\parskip}{6pt}
 \setlength{\parindent}{0pt}
 \usepackage{enumerate}
 \usepackage{color}
+\usepackage{svg}
 \pagestyle{plain}
 \usepackage{palatino}
 \usepackage[bookmarks,bookmarksopen=true,bookmarksnumbered=true,colorlinks,linkcolor=black,urlcolor=blue]{hyperref}
 \begin{document}
 
-{\LARGE Satzung des \name\ e.V.}
-
+{\setlength\tabcolsep{0 pt}
+\begin{tabular}{p{10.6cm}p{4.7cm}} {\LARGE Satzung des \name\ e.V.} &
+	\begin{tabular}{@{}c@{}}
+	\includesvg[width=4.5cm]{dz_logo_vektor_alpha}
+	\end{tabular}
+\end{tabular}
+}
 Fassung vom \revdate\ (Revision \revision)
 
 \subsection*{Pr{\"a}ambel}
@@ -64,15 +68,15 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 \item 	Der Satzungszweck wird verwirklicht insbesondere durch folgende Ma{\ss}nahmen:
 	\begin{itemize}
 		\item	Kunst und Kultur (AO \S\ 52 2.5) durch die Ausbildung an und die Nutzung von technischen Ger{\"a}ten zur
-				Selbstentfaltung und Schaffung von Kunst. Hierf{\"u}r gibt es regelm{\"a}{\ss}ige {\"o}ffentliche Workshops und Treffen
-				(zum Beispiel die \qs{Hardware-Bastelrunde}), unregelm{\"a}{\"ss}ige {\"o}ffentliche Veranstaltungen (zum Beispiel
-				"Hebocon"), Pr{\"a}sentationsm{\"o}glichkeit f{\"u}r K{\"u}nstler und Projekte (zum Beispiel \qs{Projektionsmapping}
-				in den Vereinsr{\"a}umen) und {\"o}ffentlich sichtbare Medien f{\"u}r Kunst in der Informationstechnologie
+				Selbstentfaltung und Schaffung von Kunst. Hierf{\"u}r gibt es re\-gel\-m{\"a}{\ss}ige {\"o}ffent\-liche Workshops und Treffen
+				(zum Beispiel die \qs{Hard\-ware-Bastel\-runde}), unregelm{\"a}{\"ss}ige {\"o}ffent\-liche Veran\-stal\-tungen (zum Beispiel
+				"Hebocon"), Pr{\"a}\-senta\-tions\-m{\"o}glichkeit f{\"u}r K{\"u}nstler und Projekte (zum Beispiel \qs{Projektionsmapping}
+				in den Vereins\-r{\"a}umen) und {\"o}ffent\-lich sichtbare Medien f{\"u}r Kunst in der Infor\-mations\-techno\-logie
 				(zum Beispiel interaktive Installationen im Schaufenster).
-		\item	Erziehung und Bildung (AO \S\ 52 2.7) durch regelm{\"a}{\ss}ige {\"o}ffentliche Workshops und Treffen (zum Beispiel
+		\item	Erziehung und Bildung (AO \S\ 52 2.7) durch regel\-m{\"a}{\ss}ige {\"o}ffent\-liche Workshops und Treffen (zum Beispiel
 				Sicherheit in der Informationstechnologie \qs{Cyber-Sec Gruppe}, einsteigerfreundliche Programmiertreffen)
-				und offene Selbsthilfetreffen zur Erkundung der inneren Funktionsweise, Fehleranalyse und Reparatur von
-				defekten Ger{\"a}ten (\qs{Technik-Sprechstunde}).
+				und offene Selbsthilfetreffen zur Erkun\-dung der inneren Funktionsweise, Fehleranalyse und Reparatur von
+				defekten Ge\-r{\"a}ten (\qs{Tech\-nik-Sprech\-stunde}).
 		\item	Kriminalpr{\"a}vention (AO \S\ 52 2.20) durch allgemeine und individuelle Ratschl{\"a}ge zur Sicherung der eigenen
 				Daten und des Computers, Hilfe bei kompromittierten Daten sowie weitere M{\"o}glichkeiten der
 				opferbasierten Pr{\"a}vention von digitaler Kriminalit{\"a}t.\\
@@ -139,7 +143,24 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 %
 % Paragraph 6 ====================================================
 %
-\subsection*{\S \ 6 Organe des Vereins }
+\subsection*{\S \ 6: Hausrecht}
+\begin{enumerate}
+	\item Der Vorstand übertr{\"a}gt allen Mitgliedern ein
+		eingeschr{\"a}nktes Hausrecht.
+	\item Mitglieder mit eingeschr{\"a}nktem Hausrecht sind
+		befugt, nach eigenem Ermessen Personen der
+		R{\"a}umlichkeiten zu verweisen, um damit materiellen
+		oder immateriellen Schaden abzuwenden oder zu
+		minimieren. Ein solcher Verweis ist auf maximal 24
+		Stunden begrenzt. Das Mitglied muss unmittelbar
+		den Vorstand {\"u}ber die Situation in Kenntnis setzen.
+	\item Der Vorstand kann ein weitergehendes Hausrecht
+		{\"u}bertragen und auch wieder entziehen.
+\end{enumerate}
+%
+% Paragraph 7 ====================================================
+%
+\subsection*{\S \ 7 Organe des Vereins }
 \begin{enumerate}
 	\item Die Organe des Vereins sind:
 		\begin{itemize}
@@ -148,9 +169,9 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 		\end{itemize}
 \end{enumerate}
 %
-% Paragraph 7 ====================================================
+% Paragraph 8 ====================================================
 %
-\subsection*{\S \ 7 Mitgliederversammlung}
+\subsection*{\S \ 8 Mitgliederversammlung}
 \begin{enumerate}
 
         \item Die Mitgliederversammlung ist das oberste Beschlussorgan des Vereins.
@@ -158,7 +179,7 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 		Auf Wunsch eines Mitglieds ist geheim abzustimmen.
 	\item Jedes Mitglied hat genau eine Stimme.
 	\item Zur Fassung eines Beschlusses ist eine einfache Mehrheit der abgegebenen Stimmen
-             notwendig, sofern keine abweichende Regelung in Satzung oder Gesch{\"a}ftsordnung getroffen wurde.
+             not\-wen\-dig, sofern keine abweichende Regelung in Satzung oder Gesch{\"a}ftsordnung getroffen wurde.
 			 Eine zur Herstellung der Beschlussf{\"a}higkeit n{\"o}tige Grenze von abgegebenen Stimmen wird in der
 			 Gesch{\"a}ftsordnung festgelegt.
 	\item Eine ordentliche Mitgliederversammlung, bezeichnet als Jahreshauptversammlung,
@@ -189,9 +210,9 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 		oder Schrift\-f{\"u}h\-rer bestimmen.
 \end{enumerate}
 %
-% Paragraph 8 ====================================================
+% Paragraph 9 ====================================================
 %
-\subsection*{\S \ 8 Vorstand }
+\subsection*{\S \ 9 Vorstand }
 \begin{enumerate}
 
     \item Der Vorstand besteht aus mindestens drei Mitgliedern: dem
@@ -200,7 +221,7 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
     kann auf Wunsch der Mitglieder auf eine Wahl der Beisitzer verzichtet
     werden. Die Gesch{\"a}ftsordnung regelt das verwendete Wahlverfahren.
     \item Vorstand im Sinne des \S \ 26 BGB ist jedes Vorstandsmitglied.
-    Vorstandsvorsitzender, Schatzmeister und Schriftf{\"u}hrer sind einzeln
+    Vor\-stands\-vorsitzen\-der, Schatz\-meis\-ter und Schriftf{\"u}hrer sind einzeln
     berechtigt, den Verein nach au{\ss}en zu vertreten. Die Gesch{\"a}ftsordnung kann
     hierf{\"u}r Einschr{\"a}nkungen festlegen.
 	\item Der Schatzmeister {\"u}ber\-wacht die Haushaltsf{\"u}hrung und verwaltet das
@@ -211,30 +232,30 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 		des Vorstandes ist der gesamte Vorstand neu zu w{\"a}hlen. Bis zur Wahl eines neuen Vorstands ist der
 		bisherige Vorstand zur bestm{\"o}glichen Wahrnehmung seiner Aufgaben verpflichtet.
     \item Die Amtsdauer der Vorstandsmitglieder betr{\"a}gt zwei Jahre. Sie werden
-    von der Mitgliederversammlung aus den Mitgliedern des Vereins gew{\"a}hlt. Es
-    werden nacheinander Schatzmeister, Vorstandsvorsitzender und Schriftf{\"u}hrer
-    sowie falls gew{\"u}nscht bis zu drei Beisitzer gew{\"a}hlt. Eine Wiederwahl ist
+    von der Mit\-glieder\-ver\-sammlung aus den Mitgliedern des Vereins gew{\"a}hlt. Es
+    werden nacheinander Schatz\-meister, Vorstands\-vorsitzen\-der und Schrift\-f{\"u}hrer
+    sowie falls gew{\"u}nscht bis zu drei Beisitzer gew{\"a}hlt. Die Wiederwahl ist
     zul{\"a}ssig.
-    \item Dem Vorstand obliegen alle Entscheidungen, die nicht durch die Satzung oder die Gesch{\"a}ftsordnung geregelt sind.
+    \item Dem Vorstand obliegen alle Entschei\-dungen, die nicht durch die Satzung oder die Ge\-sch{\"a}fts\-ord\-nung geregelt sind.
 	\item Der Vorstand ist Dienstvorgesetzter aller vom Verein angestellten Mitarbeiter;
 		er kann diese Aufgabe einem Vorstandsmitglied {\"u}bertragen.
 	\item Die Vorstandsmitglieder sind grunds{\"a}tzlich ehrenamtlich t{\"a}tig; sie haben Anspruch
 		auf Erstattung notwendiger Auslagen, deren Rahmen von der Gesch{\"a}ftsordnung
 		festgelegt wird.
-    \item Der Vorstand tritt nach Bedarf zusammen. Die Vorstandssitzungen
-    werden vom Schriftf{\"u}hrer schriftlich einberufen. Der Vorstand ist
-    beschlussf{\"a}hig wenn mindestens zwei Drittel (nach Stimmgewicht) der Vorstandsmitglieder
-    teilnehmen. Die Beschl{\"u}sse der Vorstandssitzung sind schriftlich zu
-    protokollieren. Protokolle sind auf Anfrage Vereinsmitgliedern zug{\"a}nglich zu machen.
+    \item Der Vorstand tritt nach Bedarf zusammen. Die Vorstands\-sitzungen
+    werden vom Schrift\-f{\"u}h\-rer schriftlich einberufen. Der Vorstand ist
+    beschluss\-f{\"a}hig wenn mindestens zwei Drittel (nach Stimmgewicht) der Vor\-stands\-mit\-glieder
+    teilnehmen. Die Beschl{\"u}sse der Vor\-stands\-sitzung sind schriftlich zu
+    protokollieren. Protokolle sind auf Anfrage Vereinsmitgliedern zu\-g{\"a}ng\-lich zu machen.
     \item Vorstandsvorsitzender, Schatzmeister und Schriftf{\"u}hrer haben bei
     Abstimmungen des Vorstands jeweils zwei Stimmen. Jeder Beisitzer hat eine
     Stimme. Bei Abstimmungen ist eine Mehrheit von zwei Dritteln der
     abgegebenen g{\"u}ltigen Stimmen n{\"o}tig.
 \end{enumerate}
 %
-% Paragraph 9 ====================================================
+% Paragraph 10 ====================================================
 %
-\subsection*{\S \ 9 Satzungs- und Gesch{\"a}ftsordnungs{\"a}nderung}
+\subsection*{\S \ 10 Satzungs- und Gesch{\"a}ftsordnungs{\"a}nderung}
 \begin{enumerate}
 	\item {\"U}ber Satzungs- und Gesch{\"a}ftsordnungs{\"a}nderungen kann in der Mitgliederversammlung
 		nur abgestimmt werden, wenn auf diesen Tagesordnungspunkt hingewiesen wurde und der
@@ -248,9 +269,9 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 		werden.
 \end{enumerate}
 %
-% Paragraph 10 ====================================================
+% Paragraph 11 ====================================================
 %
-\subsection*{\S \ 10 Aufl{\"o}sung des Vereins und Verm{\"o}gensbindung}
+\subsection*{\S \ 11 Aufl{\"o}sung des Vereins und Verm{\"o}gensbindung}
 \begin{enumerate}
 	\item Die Aufl{\"o}sung des Vereins muss von der Mitgliederversammlung mit einer Mehrheit von
 		zwei Dritteln beschlossen werden. Die Abstimmung ist nur m{\"o}glich, wenn auf der Einladung
@@ -271,9 +292,9 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 		das Verm{\"o}gen und die G{\"u}ter des Vereins werden entsprechend {\"u}bertragen.
 \end{enumerate}
 %
-% Paragraph 11 ====================================================
+% Paragraph 12 ====================================================
 %
-\subsection*{\S \ 11 Schriftliche Kommunikation, Abstimmungsf{\"a}higkeit}
+\subsection*{\S \ 12 Schriftliche Kommunikation, Abstimmungsf{\"a}higkeit}
 \begin{enumerate}
 	\item Schriftliche Erkl{\"a}rungen im Sinne dieser Satzung sind
 		handschriftlich unterschriebene Dokumente in Papierform sowie
@@ -282,20 +303,4 @@ Ver\-g{\"u}\-tung\-en be\-g{\"u}ns\-tigt werden.
 		fernm{\"u}ndlich oder postalisch zugestellte Stimmen von Mitgliedern
 		wie Stimmen von anwesenden Mitgliedern gez{\"a}hlt.
 \end{enumerate}
-
 \end{document}
-
-
-
-
-
-
-% [1]
-%----todo:
-%    gesch{\"a}ftsordnung: Vorstand m{\"o}chte alle Mitgliedsbewerber kennen? Oder Frist etc?
-%    mitgliederversammlung kann vorstand kicken?
-% [FIXME] Pflicht die R{\"a}ume und Einrichtungen pfleglich und ordentlich zu behandeln.
-% technische l{\"o}sung um mitglieder kurzfristig zu Input zu zwingen, vor der n{\"a}chsten mitgliederversammlung
-% G{\"a}ste mit zur MV (aka Mitgliederplenum), ohne Stimmrecht
-% Anwesenheit zur MV (VoIP) in der GO definieren
-% GO: Menge an Menschen erh{\"o}hen, welche eine Mitgliederversammlung autorisieren m{\"u}ssen, um die Satzung zu {\"a}ndern (50) oder Verein aufzul{\"o}sen \S \ 10, Vorstand absetzen

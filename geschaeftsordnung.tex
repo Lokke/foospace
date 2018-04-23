@@ -1,31 +1,31 @@
-% [1]
-%----todo:
-% technische l{\"o}sung um mitglieder kurzfristig zu Input zu zwingen, vor der n{\"a}chsten mitgliederversammlung
-
-\documentclass[10pt,a4paper]{article}
-\usepackage{ucs}
+\documentclass[10pt,a4paper]{scrartcl}
 \usepackage{eurosym}
-\usepackage[utf8x]{inputenc}
-\usepackage[ngerman]{babel}
 \usepackage[margin=3cm]{geometry}
+\usepackage[utf8]{inputenc}
 \newcommand{\qt}[1]{\glq\emph{#1}\grq}
-\newcommand{\qs}[1]{\glqq#1\grqq}
+\newcommand{\qs}[1]{"#1"}
 \newcommand{\name}{dezentrale}
-\newcommand{\revision}{$Revision: 2017-06-21$}
+\newcommand{\revision}{$4$}
+\newcommand{\revdate}{$2018-04-20$}
 \setlength{\parskip}{6pt}
 \setlength{\parindent}{0pt}
 \usepackage{enumerate}
 \usepackage{color}
+\usepackage{svg}
 \pagestyle{plain}
 \usepackage{palatino}
 \usepackage[bookmarks,bookmarksopen=true,bookmarksnumbered=true,colorlinks,linkcolor=black,urlcolor=blue]{hyperref}
-\usepackage{ulem}
-\usepackage{eurosym}
 \begin{document}
 
-{\LARGE Gesch{\"a}ftsordnung des \name\ e.V.}
+{\setlength\tabcolsep{0 pt}
+\begin{tabular}{p{10.6cm}p{4.7cm}} {\LARGE Gesch{\"a}ftsordnung des \name\ e.V.} &
+	\begin{tabular}{@{}c@{}}
+	\includesvg[width=4.5cm]{dz_logo_vektor_alpha}
+	\end{tabular}
+\end{tabular}
+}
+Fassung vom \revdate\ (Revision \revision)
 
-Fassung vom \today (\revision)
 %
 % Paragraph 1 ====================================================
 %
@@ -56,7 +56,7 @@ Fassung vom \today (\revision)
     
     \item Ein Mitgliedschaftsanw{\"a}rter hat die Pflicht, sich einem Vorstandsmitglied oder zur 
     Mitgliederversammlung pers{\"o}nlich vorzustellen, um die Mitgliedschaft wirksam zu machen.
-    \item Unabh{\"a}ngig vom Mitgliedsbeitrag wird zwischen regul{\"a}ren Mitgliedern und F{\"o}rdermitgliedern
+    \item Unabh{\"a}ngig vom Mitgliedsbeitrag wird zwischen regul{\"a}ren Mitgliedern und F{\"o}r\-der\-mit\-gliedern
     unterschieden. Bei Eintritt in den Verein ist jedes Mitglied ein regul{\"a}res Mitglied.
     Nimmt ein regul{\"a}res Mitglied an zwei aufeinanderfolgenden Mitgliederversammlungen nicht
     teil, wird es automatisch zum F{\"o}rdermitglied. Bei Teilnahme an einer Mitgliederversammlung
@@ -66,6 +66,11 @@ Fassung vom \today (\revision)
     
 \item {\"A}nderungen bez{\"u}glich der Mitgliedschaft (Mitgliedbeitrag, Mitgliedsart oder Beendigung der Mitgliedschaft)
 	sind dem Vorstand schriftlich mitzuteilen.
+\item	Mit Annahme des Mitgliedsantrages und Ausgabe der
+	Mitgliedsnummer ist ein Mitgliedschaftsanw{\"a}rter ein
+	vorl{\"a}ufiges Mitglied. Nach einer Frist von sieben
+	Tagen und dem Eingang des Mitgliedsbeitrages wird das
+	vorl{\"a}ufige Mitglied zum regul{\"a}ren Mitglied.
 \end{enumerate}
 %
 % Paragraph 2 ====================================================
