@@ -1,0 +1,87 @@
+\ProvidesFile{absender.lco}
+
+
+\KOMAoptions{%
+  fontsize=11pt,%%          Schriftgroesse
+  %---------------------------------------------------------------------------
+  % Satzspiegel
+    paper=a4,%%               Papierformat
+    %enlargefirstpage=on,%%    Erste Seite anders
+    %pagenumber=headright,%%   Seitenzahl oben mittig  
+  %---------------------------------------------------------------------------
+  % Layout
+    headsepline=off,%%         Linie unter der Seitenzahl
+    parskip=half,%%           Abstand zwischen Absaetzen
+  %---------------------------------------------------------------------------
+  % Was kommt in den Briefkopf und in die Anschrift
+    fromalign=right,%%        Plazierung des Briefkopfs
+    fromphone=on,%%           Telefonnummer im Absender
+    fromrule=aftername,%%     Linie im Absender (aftername, afteraddress)
+    fromfax=off,%%            Faxnummer
+    fromemail=on,%%           Emailadresse
+    fromurl=off,%%            Homepage
+    fromlogo=on,%%            Firmenlogo
+    ,
+  addrfield=on,%%           Adressfeld fuer Fensterkuverts
+    backaddress=on,%%         ...und Absender im Fenster
+    subject=beforeopening,%%  Plazierung der Betreffzeile
+    locfield=narrow,%%        zusaetzliches Feld fuer Absender
+    foldmarks=on,%%           Faltmarken setzen
+    numericaldate=off,%%      Datum numerisch ausgeben
+    refline=narrow,%%         Geschaeftszeile im Satzspiegel
+    firstfoot=on,%%           Footerbereich
+  %---------------------------------------------------------------------------
+  % Formatierung
+    draft=false%%                Entwurfsmodus
+}
+
+% \KOMAoptions{%
+% % fromemail=true,       % Email wird im Briefkopf angezeigt
+% % fromphone=true,       % Telefonnumer wird im Briefkopf angezeigt
+% % fromfax=true,         % Faxnummer wird im Briefkopf angezeit
+% % fromurl=true,         % URL wird im Briefkopf angezeigt
+% fromlogo=true,        % Logo wird im Briefkopf angezeigt
+% % subject=titled,       % Druckt "Betrifft: " vor dem Betreff
+% locfield=wide,          % Breite Absenderergänzung (location)
+% fromalign=left,         % Ausrichtung des Briefkopfes
+% fromrule=afteraddress%  % Trennlinie unter dem Briefkopf
+% }
+
+% \RequirePackage[utf8]{inputenc}
+% \RequirePackage[ngerman]{babel}
+
+\setkomavar{fromname}{dezentrale e.V.} % Name
+\setkomavar{fromaddress}{% % Adresse
+  Dreilindenstr. 19\\
+  04177 Leipzig%
+}
+\setkomavar{fromemail}{vorstand@dezentrale.space} % Email-Adresse
+\setkomavar{fromphone}{0221~596193719} % Telefonnummer
+\setkomavar{fromfax}{n/a} % Faxnummer
+\setkomavar{fromurl}[Website:~]{www.dezentrale.space} % Website
+
+% ===== Absenderergänzung =====
+\setkomavar{location}{%
+  \raggedright\footnotesize{%
+  \usekomavar{fromname}\\
+  \usekomavar{fromaddress}\\
+  \usekomavar*{fromphone}\usekomavar{fromphone}\\
+  \usekomavar*{fromfax}\usekomavar{fromfax}\\
+  \usekomavar*{fromemail}\usekomavar{fromemail}
+  \usekomavar*{fromurl}\usekomavar{fromurl}}%
+}
+% ============================
+
+% Logo
+% \setkomavar{fromlogo}{\includegraphics{logo.png}}
+\setkomavar{fromlogo}{\includesvg[width=4cm]{dz_logo_vektor_alpha}}
+
+% Die Bankverbindung wird nicht automatisch verwendet. Dazu muss bspw. mittels \firstfoot ein eigener Brieffuß definiert werden.
+\setkomavar{frombank}{}
+
+% ===== Signatur =====
+\setkomavar{signature}{%
+  \usekomavar{fromname}%
+}
+\renewcommand*{\raggedsignature}{\raggedright}
+% ====================
