@@ -1,7 +1,6 @@
-# Vereinsdokumente für den "FOOSPACE"
+# Vereinsdokumente für den dezentrale e.V.
 
-Die hier vorliegenden Dokumente sollen als Arbeitsgrundlage für den zu gründenden
-"FOOSPACE" dienen. Als solche sind sie ausdrücklich nicht als fertig zu betrachten.
+Die hier vorliegenden Dokumente sollen als Arbeitsgrundlage für den dezentrale e.V. dienen. Als solche sind sie ausdrücklich nicht als fertig zu betrachten.
 
 Wenn du etwas ändern oder ergänzen möchtest erstelle einfach einen 'feature branch'
 und submitte einen entsprechenden pull request.
